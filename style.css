@@ -53,7 +53,7 @@ body {
 .time_measure__button {
   display: block;
   padding: 15px 30px;
-  background-color: #bb2649;
+  background-color: #39a388;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -65,7 +65,7 @@ body {
 }
 
 .time_measure__button:hover {
-  background-color: #39a388;
+  background-color: #bb2649;
   transition: 0.3s ease-in;
 }
 
