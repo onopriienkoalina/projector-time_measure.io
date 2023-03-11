@@ -8,7 +8,6 @@ const calculateBtn = document.querySelector('#calculate');
 const resultTable = document.querySelector('#result');
   
   endDate.addEventListener('change', () => {
-    startDate.max = endDate.value;
     if (endDate.value <= startDate.value) {
       endDate.value = '';
       alert('Друга дата не може бути раніше першої!');
