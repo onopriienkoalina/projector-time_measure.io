@@ -6,15 +6,6 @@ const dayOption = document.querySelector('#day-option');
 const timeOption = document.querySelector('#time-option');
 const calculateBtn = document.querySelector('#calculate');
 const resultTable = document.querySelector('#result');
-
-startDate.addEventListener('change', () => {
-    endDate.min = startDate.value;
-    if (!startDate.value) {
-      endDate.disabled = true;
-    } else {
-      endDate.disabled = false;
-    }
-  });
   
   endDate.addEventListener('change', () => {
     startDate.max = endDate.value;
