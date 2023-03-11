@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <form class="time_measure__box">
+          <label class="time_measure__label" for="presets">Проміжки часу</label>
+          <select  class="time_measure__select" id="presets" name="presets">
+            <option class="time_measure__option" value="week">тиждень</option>
+            <option class="time_measure__option" value="month">місяць</option>
+            <option class="time_measure__option" value="custom" selected>не вибрано</option>
+          </select>
+
+            <label class="time_measure__label" for="start-date">Стартова дата</label>
+            <input class="time_measure__input" type="date" id="start-date" name="start-date">
+            
+            <label class="time_measure__label" for="end-date">Кінцева дата</label>
+            <input class="time_measure__input" type="date" id="end-date" name="end-date">
+            
+            <label class="time_measure__label" for="day-option">Виберіть опції днів</label>
+            <select class="time_measure__select" id="day-option" name="day-option">
+              <option class="time_measure__option" value="all">Всі дні</option>
+              <option class="time_measure__option" value="weekdays">Будні дні</option>
+              <option class="time_measure__option" value="weekends">Вихідні дні</option>
+            </select>
+            
+            <label class="time_measure__label" for="time-option">Виберіть опції часу</label>
+            <select class="time_measure__select" id="time-option" name="time-option">
+              <option class="time_measure__option" value="days">Дні</option>
+              <option class="time_measure__option" value="hours">Години</option>
+              <option class="time_measure__option" value="minutes">Хвилини</option>
+              <option class="time_measure__option" value="seconds">Секунди</option>
+            </select>
+            
+            <button class="time_measure__button" type="button" id="calculate">Рахувати</button>
+            
+            <table class="time_measure__table" id="result">
+              <thead class="table__head">
+                <tr class="table__row">
+                  <th class="table__col">Стартова дата</th>
+                  <th class="table__col">Кінцева дата</th>
+                  <th class="table__col">Результат</th>
+                </tr>
+              </thead>
+              <tbody class="table__body">
+              </tbody>
+            </table>
+            
+        </div>
+      </form>
+
+    <script src="index.js"></script>
+</body>
+</html>
