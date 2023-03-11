@@ -15,8 +15,6 @@ const resultTable = document.querySelector('#result');
     }
   });
 
-  endDate.disabled = true;
-
 function setDates() {
   const preset = presetsVariant.value;
   const now = new Date();
